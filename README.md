@@ -1,4 +1,3 @@
-Este es un README.md diseñado con un estándar de ingeniería profesional. Está estructurado para ser claro, técnico y directo, ideal para tu proyecto de la UNISON o para tu portafolio en GitHub.
 
 Comment Wall - Community Platform
 Descripción del Proyecto
