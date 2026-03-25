@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Wall | Dev Community</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="login-overlay" class="overlay">
+        <div class="login-card">
+            <i class="fa-solid fa-user-shield fa-3x" style="color: var(--primary); margin-bottom: 1rem;"></i>
+            <h2>Identifícate</h2>
+            <p>Ingresa tu nombre para entrar al muro</p>
+            <div class="input-group">
+                <input type="text" id="login-username" placeholder="Tu nombre de usuario..." autocomplete="off">
+            </div>
+            <button id="btnLogin" class="btn-main">Entrar al Muro</button>
+            <p id="login-error" class="error-badge"></p>
+        </div>
+    </div>
+
+    <div id="main-app" class="app-wrapper" style="display: none;">
+        <div class="glass-header">
+            <div class="header-content">
+                <div class="header-title">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-cloud-bolt"></i>
+                    </div>
+                    <div class="title-text">
+                        <h1>Comment Wall</h1>
+                        <p>Hermosillo Dev Community</p>
+                    </div>
+                </div>
+                
+                <div class="header-actions">
+                    <button id="btnDarkMode" class="btn-icon" title="Cambiar Tema">
+                        <i id="dark-icon" class="fa-solid fa-moon"></i>
+                    </button>
+                    <button onclick="Session.logout()" class="btn-logout">
+                        <i class="fa-solid fa-door-open"></i> <span>Salir</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <main class="container">
+            <div class="action-bar">
+                <button id="btnToggleForm" class="btn-toggle">
+                    <i class="fa-solid fa-plus"></i> Nuevo Comentario
+                </button>
+            </div>
+
+            <section id="comment-form-section" class="form-card" style="display: none;">
+                <div class="input-group">
+                    <label>Usuario Activo</label>
+                    <div class="user-display">
+                        <img id="user-avatar" src="" alt="Avatar" class="avatar-sm">
+                        <input type="text" id="username" readonly>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Mensaje</label>
+                    <textarea id="message" placeholder="¿Qué tienes en mente?" rows="3"></textarea>
+                </div>
+                <button id="btnPublish" class="btn-main">
+                    Publicar Comentario <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </section>
+
+            <div class="divider">
+                <span>Comentarios Recientes</span>
+            </div>
+
+            <section id="comments-container" class="comments-grid"></section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

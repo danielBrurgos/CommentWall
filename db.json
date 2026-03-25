@@ -1,0 +1,83 @@
+{
+  "comments": [
+    {
+      "id": "65d2",
+      "username": "dani",
+      "message": "lolololoolo",
+      "date": "2026-03-19T12:30:26.962Z"
+    },
+    {
+      "id": "7b1c",
+      "username": "lololo",
+      "message": "afererewrwre",
+      "date": "2026-03-19T16:13:59.700Z"
+    },
+    {
+      "id": "2b24",
+      "username": "99999",
+      "message": "2222222222",
+      "date": "2026-03-19T17:05:57.939Z"
+    },
+    {
+      "id": "457a",
+      "username": "cesar Lopez",
+      "message": "admiro mucho a mi amigo daniel, es la mejor persona de lmundo.",
+      "date": "2026-03-19T17:08:20.214Z"
+    },
+    {
+      "id": "63d1",
+      "username": "dani",
+      "message": "holaaaaaaaa",
+      "date": "2026-03-23T13:10:58.844Z"
+    },
+    {
+      "id": "6f16",
+      "username": "lololo",
+      "message": "me gusta la sandia",
+      "date": "2026-03-23T13:11:30.510Z"
+    },
+    {
+      "id": "b0df",
+      "username": "lololo",
+      "message": "hola",
+      "date": "2026-03-23T13:14:43.729Z",
+      "parentId": "6f16"
+    },
+    {
+      "id": "c3fb",
+      "username": "lololo",
+      "message": "hola como estas",
+      "date": "2026-03-23T13:15:03.769Z",
+      "parentId": "63d1"
+    },
+    {
+      "id": "7561",
+      "username": "dani",
+      "message": "ME SINTO FELIZ",
+      "date": "2026-03-23T17:33:55.652Z",
+      "parentId": null
+    },
+    {
+      "id": "b839",
+      "username": "dani",
+      "message": "QUE BIEN",
+      "date": "2026-03-23T17:34:02.172Z",
+      "parentId": "7561"
+    },
+    {
+      "id": "337b",
+      "username": "USER01",
+      "message": "excelente",
+      "date": "2026-03-23T17:34:20.511Z",
+      "parentId": "7561"
+    },
+    {
+      "id": "35e9",
+      "username": "dani",
+      "message": "hhjhbm",
+      "date": "2026-03-23T19:01:59.370Z",
+      "parentId": null
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
